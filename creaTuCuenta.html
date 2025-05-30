@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/proyec.css" />
+  </head>
+  <body>
+    <menu>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html">Cursos </a></li>
+        <li><a href="QuienesSomos.html">Nosotros </a></li>
+        <li><a href="creaTuCuenta.html">Crea tu cuenta</a></li>
+      </ul>
+    </menu>
+
+    <nav>
+      <form id="Registro" class="form-registro">
+        <fieldset>
+          <legend>Crea tu usuario</legend>
+
+          <label
+            >Nombre y Apellido:
+            <input
+              type="text"
+              name="Nombre completo"
+              id=""
+              placeholder="Nombre y Apellido"
+            />
+          </label>
+
+          <br />
+          <label for="email">Email:</label>
+
+          <input type="email" name="email" id="email" placeholder="Email" />
+
+          <br />
+          <label
+            >Contraseña:
+            <input
+              type="password"
+              name="contraseña"
+              id="Contraseña"
+              placeholder="Contraseña"
+            />
+
+            <br />
+          </label>
+          Edad:
+
+          <input type="number" name="edad" id="Edad" placeholder="Edad" />
+          <label> </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos Adicionales</legend>
+
+          <div>
+            <input type="radio" name="Pais" value="AR" />
+            <label>Argentina</label>
+            <input type="radio" name="Pais" ivalue="UR" />
+            <label>Uruguay</label>
+            <input type="radio" name="Pais" value="PA" />
+            <label>Paraguay</label>
+            <input type="radio" name="Pais" ivalue="CH" />
+            <label>Chile</label>
+          </div>
+
+          <select name="" id="">
+            <option value="">Algebra</option>
+            <option value="">Fisica</option>
+            <option value="">Matematicas</option>
+            <option value="">Quimica</option>
+          </select>
+        </fieldset>
+
+        <div class="registro-acciones">
+          <input type="checkbox" name="" id="terminos" />
+          <label for="terminos">Acepto términos y condiciones</label>
+          <button type="button" onclick="window.location.href='usuariocreado.html'">Registrarse</button>
+        </div>
+      </form>
+    </nav>
+
+   <footer class="footer-contacto">
+  <div>
+    <span>Contacto:</span>
+    <span>Teléfono: 2215520000</span> |
+    <span>Mail: cursosonline@hotmail.com</span>
+  </div>
+ <div class="footer-mapa">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!4v1744826110713!6m8!1m7!1syTcpIblFJViS8hFU_w_0YA!2m2!1d43.14384402369703!2d141.1753804585233!3f268.4805603027344!4f-0.22081756591796875!5f0.7820865974627469"
+    width="340"
+    height="180"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+    <a href="./index.html">Inicio</a>
+  </body>
+</html>
