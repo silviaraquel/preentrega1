@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz de Bienvenida</title>
+    <link rel="stylesheet" href="./Assets/css/proyec.css" />
+    <link rel="stylesheet" href="./Assets/css/quiz.css" />
+  </head>
+  <body>
+    <!-- Elementos flotantes alrededor del quiz, centrados -->
+    <div class="quiz-floating">
+      <span class="float-item" style="top: 18%; left: 6%">🖱️</span>
+      <span class="float-item" style="top: 10%; right: 8%">💻</span>
+      <span class="float-item" style="bottom: 18%; left: 8%">➗</span>
+      <span class="float-item" style="bottom: 22%; right: 10%">📐</span>
+      <span class="float-item" style="top: 48%; left: 2%">∑</span>
+      <span class="float-item" style="bottom: 8%; right: 18%">🎨</span>
+      <span class="float-item" style="top: 70%; left: 85%">⚡</span>
+      <span class="float-item" style="top: 28%; right: 18%">🏛️</span>
+    </div>
+    <main class="quiz-main">
+      <h1>Quiz de Bienvenida</h1>
+      <form id="quizForm">
+        <div class="quiz-cards">
+          <!-- Pregunta 1 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">🧮</span>
+            <p class="quiz-num">1</p>
+            <div>
+              <p class="quiz-title">
+                Álgebra: ¿Cuál es el resultado de <b>3x + 4x</b>?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q1" value="a" required /> 7x</label
+                >
+                <label><input type="radio" name="q1" value="b" /> 12x</label>
+                <label><input type="radio" name="q1" value="c" /> x^7</label>
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 2 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">➗</span>
+            <p class="quiz-num">2</p>
+            <div>
+              <p class="quiz-title">Matemática: ¿Cuánto es <b>5²</b>?</p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q2" value="a" required /> 25</label
+                >
+                <label><input type="radio" name="q2" value="b" /> 10</label>
+                <label><input type="radio" name="q2" value="c" /> 15</label>
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 3 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">⚡</span>
+            <p class="quiz-num">3</p>
+            <div>
+              <p class="quiz-title">
+                Física: ¿Cuál es la aceleración de la gravedad en la Tierra
+                (aprox)?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q3" value="a" required /> 9.8
+                  m/s²</label
+                >
+                <label
+                  ><input type="radio" name="q3" value="b" /> 3.6 m/s²</label
+                >
+                <label
+                  ><input type="radio" name="q3" value="c" /> 12 m/s²</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 4 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">🏛️</span>
+            <p class="quiz-num">4</p>
+            <div>
+              <p class="quiz-title">
+                Historia: ¿Quién fue el primer presidente de Argentina?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q4" value="a" required />
+                  Bernardino Rivadavia</label
+                >
+                <label
+                  ><input type="radio" name="q4" value="b" /> Manuel
+                  Belgrano</label
+                >
+                <label
+                  ><input type="radio" name="q4" value="c" /> José de San
+                  Martín</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 5 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">💻</span>
+            <p class="quiz-num">5</p>
+            <div>
+              <p class="quiz-title">
+                Programación: ¿Qué imprime <b>console.log(typeof "123")</b> en
+                JavaScript?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q5" value="a" required />
+                  string</label
+                >
+                <label><input type="radio" name="q5" value="b" /> number</label>
+                <label><input type="radio" name="q5" value="c" /> object</label>
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 6 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">🎨</span>
+            <p class="quiz-num">6</p>
+            <div>
+              <p class="quiz-title">
+                Diseño Gráfico: ¿Qué herramienta se usa para trabajar con
+                vectores?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q6" value="a" required /> Adobe
+                  Illustrator</label
+                >
+                <label
+                  ><input type="radio" name="q6" value="b" /> Adobe
+                  Photoshop</label
+                >
+                <label
+                  ><input type="radio" name="q6" value="c" /> Microsoft
+                  Word</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 7 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">🌎</span>
+            <p class="quiz-num">7</p>
+            <div>
+              <p class="quiz-title">
+                Cultura General: ¿Cuál es el río más largo del mundo?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q7" value="a" required />
+                  Amazonas</label
+                >
+                <label><input type="radio" name="q7" value="b" /> Nilo</label>
+                <label
+                  ><input type="radio" name="q7" value="c" /> Yangtsé</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 8 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">➗</span>
+            <p class="quiz-num">8</p>
+            <div>
+              <p class="quiz-title">
+                Matemática: ¿Cuál es el valor de π (pi) aproximado?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q8" value="a" required />
+                  3.14</label
+                >
+                <label><input type="radio" name="q8" value="b" /> 2.71</label>
+                <label><input type="radio" name="q8" value="c" /> 1.61</label>
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 9 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">⚡</span>
+            <p class="quiz-num">9</p>
+            <div>
+              <p class="quiz-title">
+                Física: ¿Qué instrumento mide la presión atmosférica?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q9" value="a" required />
+                  Barómetro</label
+                >
+                <label
+                  ><input type="radio" name="q9" value="b" /> Termómetro</label
+                >
+                <label
+                  ><input type="radio" name="q9" value="c" /> Amperímetro</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Pregunta 10 -->
+          <div class="quiz-card">
+            <span class="quiz-icon">💻</span>
+            <p class="quiz-num">10</p>
+            <div>
+              <p class="quiz-title">
+                Programación: ¿Cuál es el lenguaje más usado para desarrollo web
+                en el lado del cliente?
+              </p>
+              <div class="quiz-options">
+                <label
+                  ><input type="radio" name="q10" value="a" required />
+                  JavaScript</label
+                >
+                <label
+                  ><input type="radio" name="q10" value="b" /> Python</label
+                >
+                <label><input type="radio" name="q10" value="c" /> Java</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="quiz-btn">Ver resultado</button>
+      </form>
+      <div class="quiz-result" id="quizResult"></div>
+      <div id="quiz-extra" class="quiz-extra" style="display: none">
+        <div id="quiz-comment" class="quiz-comment"></div>
+        <a id="quiz-action" class="quiz-btn quiz-btn-extra" href="index.html">
+          Ir al inicio
+        </a>
+      </div>
+    </main>
+    <script src="./Assets/js/quiz.js"></script>
+  </body>
+</html>
